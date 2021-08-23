@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  height: 80%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+<title>About Us</title>
+</head>
+<body>
+
+<div class="about-section">
+  <h1>Blood Donation System</h1>
+  <h1>ABOUT US</h1>
+  <h1>Here is the basic information of the four Pharmacies of this blood donation system.</h1>
+</div>
+
+<h2 style="text-align:center">Our Team</h2>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="img/aritra.jpg" alt="Aritra" style="width:100%">
+      <div class="container">
+        <h2>Basu Pharmacy </h2>
+        <h2> Aritra Basu </h2>
+        <p class="title">BTech CSE, VIT Chennai</p>
+        <p class="title">Reg No: 19BCE1242</p>
+      </div>
+    </div>
+  </div>
+  
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="img/deb.jpg" alt="Debarshi Das" style="width:100%">
+      <div class="container">
+        <h2>Das Pharmacy </h2>
+        <h2>Debarshi Das </h2>
+        <p class="title">BTech CSE, VIT Chennai</p>
+        <p class="title">Reg No: 19BCE1608</p>
+      </div>
+    </div>
+  </div>
+  
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="img/amrit.jpg" alt="Amrit" style="width:100%">
+      <div class="container">
+        <h2>Sen Pharmacy </h2>
+        <h2>Amrit Sen </h2>
+        <p class="title">BTech CSE-CPS, VIT Chennai</p>
+        <p class="title">Reg No: 19BPS1036</p>
+      </div>
+    </div>
+  </div>
+  
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="img/sayan.jpg" alt="Sayan" style="width:100%">
+      <div class="container">
+         <h2>Roy Pharmacy </h2>
+        <h2>Sayan Roy </h2>
+        <p class="title">BTech CSE, VIT Chennai</p>
+        <p class="title">Reg No: 19BCE1529</p>
+      </div>
+    </div>
+  </div>
+  
+ 
+</div>
+
+</body>
+</html>

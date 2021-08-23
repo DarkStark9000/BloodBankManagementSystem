@@ -1,0 +1,87 @@
+
+.login {
+    overflow: hidden;
+    background-color: #ffff6b;
+    padding: 40px 30px 30px 30px;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    transform: translate(-50%, -50%);
+    
+  }
+   
+  .login > input {
+    font-family: "Asap", sans-serif;
+    display: block;
+    border-radius: 5px;
+    font-size: 16px;
+    background: white;
+    width: 100%;
+    border: 0;
+    padding: 10px 10px;
+    margin: 15px -10px;
+  }
+  .login > select {
+    font-family: "Asap", sans-serif;
+    display: block;
+    border-radius: 5px;
+    font-size: 16px;
+    background: white;
+    width: 100%;
+    border: 0;
+    padding: 10px 10px;
+    margin: 15px -10px;
+  }
+  .login > button {
+    font-family: "Cambria", sans-serif;
+    cursor: pointer;
+    color: rgb(236, 233, 233);
+    font-size: 16px;
+    text-transform: uppercase;
+    width: 80px;
+    border: 0;
+    padding: 10px 0;
+    margin-top: 10px;
+    margin-left: -5px;
+    border-radius: 5px;
+    background-color: #12E6A3;
+    transition: background-color 300ms;
+    display:block;
+    border-radius:5x;
+  }
+  .login > button:hover {
+    background-color: #3589f0;
+  }
+  .login::before, .login::after {
+    content: '';
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    border-top-left-radius: 40%;
+    border-top-right-radius: 45%;
+    border-bottom-left-radius: 35%;
+    border-bottom-right-radius: 40%;
+    z-index: -1;
+  }
+  .login::before {
+    left: 0%;
+    bottom: -300;
+    background-color: rgba(182, 230, 80, 1);
+    animation: wawes 6s infinite linear;
+  }
+  .login::after {
+    left:10%;
+    bottom: -125;
+    background-color: rgba(147, 209, 15, 1);
+    animation: wawes 7s infinite;
+  }
+  @keyframes wawes {
+    from {
+      transform: rotate(0);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }

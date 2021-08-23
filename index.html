@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="/w3css/3/w3.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+     <link rel="stylesheet" href="styles.css">
+     <title>Blood donation</title>
+</head>
+<body>
+
+
+<section class="banner">
+  <!-- Slide Show -->
+   <p>Blood Donation Website</p>
+    <img class="mySlides" src="img/blood1.jpg" height=1000px
+    style="width:100%">
+    <img class="mySlides" src="img/download.jpg" height=1000px
+    style="width:100%">
+    <img class="mySlides" src="img/blood.jpg" height=1000px
+    style="width:100%">
+</section>
+<script>
+    var myIndex = 0;
+    carousel();
+    
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+         x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}
+      x[myIndex-1].style.display = "block";
+      setTimeout(carousel, 3000);
+    }
+    </script>
+<nav class="main-nav">
+    <ul>
+        <li><a href="registration.php" >Registration</a></li>
+        <li><a href="donorlogin.php">Donor sign in</a></li>
+        <li><a href="finddonor.php">Find a donor</a></li>
+        <li><a href="org.html">Organisations</a></li>
+        <li><a href="about.html">About Us</a></li>
+        </ul></nav>
+
+<main>
+    <article>
+        <h2>Why donate blood?</h2>
+        <p>Safe blood saves lives and improves health. Blood transfusion is needed for:
+
+            women with complications of pregnancy, such as ectopic pregnancies and haemorrhage before, during or after childbirth;
+            children with severe anaemia often resulting from malaria or malnutrition;
+            people with severe trauma following man-made and natural disasters; and
+            many complex medical and surgical procedures and cancer patients.
+            It is also needed for regular transfusions for people with conditions such as thalassaemia and sickle cell disease and is used to make products such as clotting factors for people with haemophilia.
+            
+            There is a constant need for regular blood supply because blood can be stored for only a limited time before use. Regular blood donations by a sufficient number of healthy people are needed to ensure that safe blood will be available whenever and wherever it is needed.
+            
+            Blood is the most precious gift that anyone can give to another person — the gift of life. A decision to donate your blood can save a life, or even several if your blood is separated into its components — red cells, platelets and plasma — which can be used individually for patients with specific conditions.
+            </p>
+        </article>
+        <ul class="images"> 
+            <li><img src="img/whydblood1.jpg" height="350px"></li>
+            <li><img src="img/whydblood2.jpg" height="350px"></li>
+        </ul>
+        <article>
+          <h2>Who needs blood?</h2>
+          <p>
+            The need for blood is constant. In New Zealand, 125,000 whole blood units will need to be donated in the next 12 months to meet clinical needs.
+
+            This blood will be used:
+            <ul>
+            <li>For cancer patients</li>
+            <li>For those undergoing surgery</li>
+            <li>To treat accident and burns victims</li>
+            <li>To treat shock</li>
+            <li>To provide clotting factors for people with bleeding disorders, including haemophilia</li>
+           <li>To provide antibody treatment for people with disorders of the immune system.</li>
+           </ul>
+            Regular blood donors ensure that a safe and plentiful supply of blood is available whenever and wherever it is needed.
+          </p>
+        </article>
+        <img src="img/whoneeds.jpg" height="550px" class="who">
+        
+</main>
+<section class="join">
+    <h2>Register today</h2>
+    <p>For further enquiries please contact with our phone number 9831335922/8961840164. You can also send your personal email id for further enquiries.</p>
+    <br>
+    <a href="about.html">Find more about us..</a>
+    <form>
+        <input type="email" name="email" placeholder="Type an email & hit enter" required>
+    </form>
+     
+    </section>
+<footer>
+    <p class="copyright">Copyright vit students</p>
+</footer>
+
+
+</body>
+</html>
